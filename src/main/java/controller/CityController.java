@@ -43,7 +43,7 @@ public class CityController {
         ModelAndView modelAndView = new ModelAndView("city/create");
         cityService.save(city);
         modelAndView.addObject("city", new City());
-        modelAndView.addObject("message", "created");
+        modelAndView.addObject("message", "Đã tạo");
         return modelAndView;
     }
 
@@ -68,7 +68,7 @@ public class CityController {
         ModelAndView modelAndView = new ModelAndView("city/edit");
         cityService.save(city);
         modelAndView.addObject("city", city);
-        modelAndView.addObject("message", "city updated successfully");
+        modelAndView.addObject("message", "Đã sửa ");
         return modelAndView;
     }
 
